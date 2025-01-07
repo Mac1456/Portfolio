@@ -13,6 +13,14 @@ A directory showcasing all my completed and ongoing web development projects —
 
 ## Listings
 
+### 💻 Rflect Landing Page
+
+[https://rflect.aniqa.dev](https://rflect.aniqa.dev)
+
+A dynamic landing page for the rflect CLI tool, designed to showcase its powerful
+journaling capabilities. Built with React, Sass, and Framer Motion, the page features an
+interactive terminal simulation that reveals content as the user scrolls.
+
 ### 📚 Define Dictionary
 
 [https://define.aniqa.dev](https://define.aniqa.dev)
