@@ -16,7 +16,7 @@ export const projects: ProjectListing[] = [
 	},
 	{
 		title: 'rflect-landing',
-		description: 'landing page for the rflect CLI tool',
+		description: 'landing page for the rflect cli tool',
 		tech: ['vite', 'react', 'framer motion', 'sass'],
 		ghLink: 'https://github.com/aniqatc/rflect-landing',
 		demoLink: 'https://rflect.aniqa.dev',
@@ -27,7 +27,7 @@ export const projects: ProjectListing[] = [
 	},
 	{
 		title: 'rflect-cli',
-		description: 'CLI tool for guided reflections and journaling',
+		description: 'cli tool for guided reflections and journaling',
 		tech: ['nodejs'],
 		ghLink: 'https://github.com/aniqatc/rflect-cli',
 		demoLink: 'https://www.npmjs.com/package/rflect',
@@ -52,7 +52,7 @@ export const projects: ProjectListing[] = [
 	},
 	{
 		title: 'ai-assistant',
-		description: 'AI-powered chat to explain, refactor, debug and convert short code snippets',
+		description: 'ai-powered chat to explain, refactor, debug and convert short code snippets',
 		tech: ['webpack', 'javascript', 'tailwind'],
 		ghLink: 'https://github.com/aniqatc/ai-assistant',
 		demoLink: 'https://code.aniqa.dev',
@@ -64,7 +64,7 @@ export const projects: ProjectListing[] = [
 	},
 	{
 		title: 'css-100',
-		description: 'my version of the 100 Days of CSS challenge',
+		description: 'my version of the 100 days of css challenge',
 		tech: ['webpack', 'javascript', 'css', 'sass'],
 		ghLink: 'https://github.com/aniqatc/css-100',
 		demoLink: 'https://css100.aniqa.dev',
@@ -133,7 +133,7 @@ export const projects: ProjectListing[] = [
 	},
 	{
 		title: 'omnifood',
-		description: 'redesign of the Omnifood landing page',
+		description: 'redesign of the omnifood landing page',
 		tech: ['javascript', 'css', 'sass'],
 		ghLink: 'https://github.com/aniqatc/omnifood',
 		demoLink: 'https://omnifood.aniqa.dev',

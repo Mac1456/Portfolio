@@ -1,7 +1,7 @@
 import { PersonalInfo } from '../types';
 import {
 	GithubLogo,
-	// TwitterLogo,
+	TwitterLogo,
 	// CodepenLogo,
 	// Butterfly,
 	PaperPlaneTilt,
@@ -19,11 +19,11 @@ export const personal: PersonalInfo = {
 			href: 'https://github.com/aniqatc',
 			Icon: GithubLogo,
 		},
-		// {
-		// 	label: 'twitter',
-		// 	href: 'https://twitter.com/aniqatc',
-		// 	Icon: TwitterLogo,
-		// },
+		{
+			label: 'twitter',
+			href: 'https://twitter.com/aniqatc',
+			Icon: TwitterLogo,
+		},
 		// {
 		// 	label: 'bluesky',
 		// 	href: 'https://bsky.app/profile/aniqatc.bsky.social',

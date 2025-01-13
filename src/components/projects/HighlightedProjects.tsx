@@ -29,11 +29,11 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 									/>
 								</span>{' '}
 								<span className="text-xs overflow-hidden w-0 group-hover:w-full transition-[width] duration-500 ease-in-out">
-									{project.status === 'ongoing' ? 'WIP' : 'Complete'}
+									{project.status === 'ongoing' ? 'WIP' : 'complete'}
 								</span>
 							</p>
 						</div>
-						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-2 -mr-1">
+						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-1 -mr-1">
 							{project.npm && (
 								<span className="hidden xs:block font-hand text-md s:text-xl text-highlight-green mr-2">
 									published on npm
@@ -53,7 +53,7 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 										weight="duotone"
 									/>
 								)}
-								<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out group-hover:border-b group-hover:border-gray-3 hover:text-white">
+								<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
 									demo
 								</span>
 							</a>
@@ -64,7 +64,7 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 									size="20"
 									weight="duotone"
 								/>
-								<span className="hidden [@media(min-width:355px)]:block -ml-0.5 overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out  group-hover:border-b group-hover:border-gray-3 hover:text-white">
+								<span className="hidden [@media(min-width:355px)]:block -ml-0.5 overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
 									repo
 								</span>
 							</a>

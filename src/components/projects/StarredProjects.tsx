@@ -40,7 +40,7 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 								</p>
 							)}
 						</div>
-						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-2 -mr-1">
+						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-1 -mr-1">
 							<a
 								href={project.demoLink}
 								className="flex items-center gap-1">
@@ -48,7 +48,7 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 									size="20"
 									weight="duotone"
 								/>
-								<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out group-hover:border-b group-hover:border-gray-3 hover:text-white">
+								<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out  hover:text-white hover:underline">
 									demo
 								</span>
 							</a>
@@ -59,7 +59,7 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 									size="20"
 									weight="duotone"
 								/>
-								<span className="hidden [@media(min-width:355px)]:block -ml-0.5 overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out group-hover:border-b group-hover:border-gray-3 hover:text-white">
+								<span className="hidden [@media(min-width:355px)]:block -ml-0.5 overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:text-white hover:underline">
 									repo
 								</span>
 							</a>
