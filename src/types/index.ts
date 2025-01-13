@@ -29,3 +29,8 @@ export interface ProjectListing {
 	cli?: boolean;
 	npm?: boolean;
 }
+
+export interface ProjectSectionProps {
+	projects: ProjectListing[];
+	className?: string;
+}

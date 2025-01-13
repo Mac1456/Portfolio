@@ -1,6 +1,7 @@
 import { Star, GithubLogo, Desktop, Circle } from '@phosphor-icons/react';
+import { ProjectSectionProps } from '../../types';
 
-export default function StarredProjects({ projects, className }) {
+export default function StarredProjects({ projects, className }: ProjectSectionProps) {
 	return (
 		<section className={className}>
 			<h2 className="text-gray-6 font-bold text-md pb-2 text-end">gh stars</h2>

@@ -1,9 +1,9 @@
 import { PersonalInfo } from '../types';
 import {
 	GithubLogo,
-	TwitterLogo,
-	CodepenLogo,
-	Butterfly,
+	// TwitterLogo,
+	// CodepenLogo,
+	// Butterfly,
 	PaperPlaneTilt,
 } from '@phosphor-icons/react';
 

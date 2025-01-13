@@ -1,6 +1,7 @@
 import { GithubLogo, Desktop, Circle, TerminalWindow } from '@phosphor-icons/react';
+import { ProjectSectionProps } from '../../types';
 
-export default function HighlightedProjects({ projects, className }) {
+export default function HighlightedProjects({ projects, className }: ProjectSectionProps) {
 	return (
 		<section className={className}>
 			<h2 className="text-accent-blue font-bold text-md pb-2 text-end">highlights</h2>

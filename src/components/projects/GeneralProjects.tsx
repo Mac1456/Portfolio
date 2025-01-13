@@ -1,6 +1,7 @@
 import { GithubLogo, Desktop } from '@phosphor-icons/react';
+import { ProjectSectionProps } from '../../types';
 
-export default function GeneralProjects({ projects, className }) {
+export default function GeneralProjects({ projects, className }: ProjectSectionProps) {
 	return (
 		<section className={className}>
 			<h2 className="text-gray-7 font-bold text-md pb-2 text-end">basic</h2>
