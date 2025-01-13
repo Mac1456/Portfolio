@@ -20,7 +20,7 @@ export default function Projects() {
 				transition={{ duration: 0.5, delay: 0.6 }}>
 				<HighlightedProjects
 					projects={highlightedProjects}
-					className="mb-2"
+					className="pl-1 mb-2 overflow-hidden"
 				/>
 			</motion.div>
 
@@ -30,7 +30,7 @@ export default function Projects() {
 				transition={{ duration: 0.5, delay: 0.8 }}>
 				<StarredProjects
 					projects={starredProjects}
-					className="mb-2 mt-10"
+					className="pl-1 mb-2 mt-10 overflow-hidden"
 				/>
 			</motion.div>
 
@@ -40,7 +40,7 @@ export default function Projects() {
 				transition={{ duration: 0.5, delay: 1 }}>
 				<GeneralProjects
 					projects={generalProjects}
-					className="mb-2 mt-10"
+					className="pl-1 mb-2 mt-10 overflow-hidden"
 				/>
 			</motion.div>
 		</motion.div>

@@ -33,7 +33,7 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 								</span>
 							</p>
 						</div>
-						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-1 -mr-1">
+						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-1 mr-1">
 							{project.npm && (
 								<span className="hidden xs:block font-hand text-md s:text-xl text-highlight-green mr-2">
 									published on npm
@@ -72,7 +72,7 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 					</div>
 					<div className="flex items-center justify-between text-xs gap-3 s:flex-nowrap flex-wrap">
 						<p className="mt-1 w-full s:w-[45ch] mb-auto">{project.description}</p>
-						<ul className="mt-1 text-gray-4 flex gap-2 flex-wrap justify-end w-full s:w-[50ch]">
+						<ul className="mt-1 mr-1 text-gray-4 flex gap-2 flex-wrap justify-end w-full s:w-[50ch]">
 							{project.pwa && (
 								<li className="rounded border px-2 py-0.5 text-highlight-blue border-muted-blue group-hover:border-highlight-blue transition-all duration-500 ease-in-out">
 									pwa

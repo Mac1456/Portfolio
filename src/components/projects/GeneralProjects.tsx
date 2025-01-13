@@ -20,7 +20,7 @@ export default function GeneralProjects({ projects, className }: ProjectSectionP
 									{project.title}
 								</a>
 							</div>
-							<div className="flex items-center gap-1  text-gray-3 group-hover:text-gray-6 -mt-1 -mr-1">
+							<div className="flex items-center gap-1  text-gray-3 group-hover:text-gray-6 -mt-1 mr-1">
 								<a
 									href={project.demoLink}
 									className="flex items-center gap-1">
