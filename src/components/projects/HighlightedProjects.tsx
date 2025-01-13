@@ -29,7 +29,7 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 									/>
 								</span>{' '}
 								<span className="text-xs overflow-hidden w-0 group-hover:w-full transition-[width] duration-500 ease-in-out">
-									{project.status === 'ongoing' ? 'WIP' : 'complete'}
+									{project.status === 'ongoing' ? 'wip' : 'complete'}
 								</span>
 							</p>
 						</div>

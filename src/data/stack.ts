@@ -7,4 +7,10 @@ export const CURRENT_STACK = {
 	dsa: ['java'],
 } as const;
 
-export const LEARNING_STACK: string[] = ['three.js', 'python', 'sql', 'graphql'] as const;
+export const LEARNING_STACK: string[] = [
+	'typescript',
+	'react',
+	'framer motion',
+	'node.js',
+	'three.js',
+] as const;

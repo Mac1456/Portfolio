@@ -1,5 +1,15 @@
-import { personal } from '../../data';
+import { personal, LEARNING_STACK } from '../../data';
 
 export default function About() {
-	return <section className="w-full xs:w-[45ch] mt-10 mb-12 text-gray-7">{personal.about}</section>;
+	return (
+		<section className="mt-10 mb-12">
+			<div className="w-full xs:w-[45ch] text-gray-7 mb-8">{personal.about}</div>
+			<div className="text-sm w-full xs:w-[54ch]">
+				currently tinkering with:{' '}
+				<span className="text-xl font-hand text-accent-orange leading-none">
+					{LEARNING_STACK.join(', ')}
+				</span>
+			</div>
+		</section>
+	);
 }

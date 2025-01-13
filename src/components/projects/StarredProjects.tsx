@@ -35,7 +35,7 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 										size="8"
 									/>{' '}
 									<span className="text-xs overflow-hidden w-0 group-hover:w-6 transition-[width] duration-300 ease-in-out">
-										WIP
+										wip
 									</span>
 								</p>
 							)}

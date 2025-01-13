@@ -111,7 +111,7 @@ export const projects: ProjectListing[] = [
 	},
 	{
 		title: 'keyboard',
-		description: 'responsive virtual keyboard with 8 themes + markdown-supported textarea',
+		description: 'responsive virtual keyboard with 8 themes & markdown-supported textarea',
 		tech: ['javascript', 'css'],
 		ghLink: 'https://github.com/aniqatc/keyboard',
 		demoLink: 'https://keyboard.aniqa.dev',
