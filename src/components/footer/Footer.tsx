@@ -1,5 +1,5 @@
 export default function Footer() {
-	const lastUpdated = new Date('2025-01-12');
+	const lastUpdated = new Date('2025-01-13');
 	const diffInDays = Math.floor((Date.now() - lastUpdated.getTime()) / 86400000);
 
 	return (

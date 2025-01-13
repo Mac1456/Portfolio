@@ -22,18 +22,20 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 								className={`flex items-center gap-1 ${
 									project.status === 'ongoing' ? 'text-accent-orange' : 'text-highlight-green'
 								}`}>
-								<Circle
-									weight="fill"
-									size="8"
-								/>{' '}
-								<span className="text-xs overflow-hidden w-0 group-hover:w-16 transition-[width] duration-500 ease-in-out">
+								<span className="flex-shrink-0">
+									<Circle
+										weight="fill"
+										size="8"
+									/>
+								</span>{' '}
+								<span className="text-xs overflow-hidden w-0 group-hover:w-full transition-[width] duration-500 ease-in-out">
 									{project.status === 'ongoing' ? 'WIP' : 'Complete'}
 								</span>
 							</p>
 						</div>
 						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-2 -mr-1">
 							{project.npm && (
-								<span className="hidden s:block font-hand text-xl text-highlight-green mr-2">
+								<span className="hidden xs:block font-hand text-md s:text-xl text-highlight-green mr-2">
 									published on npm
 								</span>
 							)}
