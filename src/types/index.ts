@@ -13,6 +13,7 @@ export interface PersonalInfo {
 	city: string;
 	about: string;
 	socialMedia: SocialMedia[];
+	lastUpdated: string;
 }
 
 export interface ProjectListing {

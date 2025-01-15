@@ -2,6 +2,18 @@ import { ProjectListing } from '../types';
 
 export const projects: ProjectListing[] = [
 	{
+		title: 'moji-canvas',
+		description: 'an interactive emoji-based sticker canvas',
+		tech: ['vite', 'react', 'tailwind'],
+		ghLink: 'https://github.com/aniqatc/',
+		demoLink: 'https://moji.aniqa.dev',
+		imagePath: '',
+		starCount: 1,
+		category: 'highlight',
+		pwa: true,
+		status: 'ongoing',
+	},
+	{
 		title: 'playground',
 		description:
 			'collection of independent widgets that each demonstrate a different functionality',
