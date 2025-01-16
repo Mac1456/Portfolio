@@ -1,7 +1,28 @@
+import { useEffect, useState } from 'react';
 import { Star, GithubLogo, Desktop, Circle } from '@phosphor-icons/react';
 import { ProjectSectionProps } from '../../types';
 
 export default function StarredProjects({ projects, className }: ProjectSectionProps) {
+	const [starCounts, setStarCounts] = useState<{ [key: string]: number }>({});
+
+	useEffect(() => {
+		async function fetchStarCount() {
+			for (const project of projects) {
+				try {
+					const response = await fetch(`https://api.github.com/repos/aniqatc/${project.title}`);
+					const data = await response.json();
+					setStarCounts(prev => ({
+						...prev,
+						[project.title]: data.stargazers_count,
+					}));
+				} catch (error) {
+					// skip
+				}
+			}
+		}
+		fetchStarCount();
+	}, [projects]);
+
 	return (
 		<section className={className}>
 			<h2 className="text-gray-6 font-bold text-md pb-2 text-end">gh stars</h2>
@@ -25,7 +46,7 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 									size="16"
 								/>{' '}
 								<span className="text-sm text-gray-5">
-									{project.starCount.toString().padStart(2, '0')}
+									{(starCounts[project.title] ?? project.starCount).toString().padStart(2, '0')}
 								</span>
 							</p>
 							{project.status === 'ongoing' && (
