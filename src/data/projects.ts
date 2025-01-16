@@ -104,7 +104,7 @@ export const projects: ProjectListing[] = [
 		ghLink: 'https://github.com/aniqatc/weather',
 		demoLink: 'https://weather.aniqa.dev',
 		imagePath: '',
-		starCount: 20,
+		starCount: 22,
 		category: 'gen',
 		pwa: true,
 		status: 'complete',
