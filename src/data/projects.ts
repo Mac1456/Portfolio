@@ -4,7 +4,7 @@ export const projects: ProjectListing[] = [
 	{
 		title: 'moji-canvas',
 		description: 'an interactive emoji-based sticker canvas',
-		tech: ['vite', 'react', 'tailwind'],
+		tech: ['vite', 'react', 'supabase', 'tailwind'],
 		ghLink: 'https://github.com/aniqatc/',
 		demoLink: 'https://moji.aniqa.dev',
 		imagePath: '',

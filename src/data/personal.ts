@@ -27,7 +27,7 @@ export const personal: PersonalInfo = {
 		},
 		// {
 		// 	label: 'bluesky',
-		// 	href: 'https://bsky.app/profile/aniqatc.bsky.social',
+		// 	href: 'https://bsky.app/profile/aniqa.dev',
 		// 	Icon: Butterfly,
 		// },
 		// {
