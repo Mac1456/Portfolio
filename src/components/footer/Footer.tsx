@@ -8,7 +8,8 @@ export default function Footer() {
 			<a
 				className="flex-shrink-0 mr-3 group"
 				href="https://github.com/aniqatc/directory"
-				target="_blank">
+				target="_blank"
+				rel="noopener noreferrer">
 				updated:{' '}
 				<span className="font-bold text-gray-8 group-hover:underline transition-all">
 					{diffInDays === 0

@@ -15,6 +15,7 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 							<a
 								href={project.ghLink}
 								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white font-semibold hover:underline">
 								{project.title}
 							</a>
@@ -41,6 +42,8 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 							)}
 							<a
 								href={project.demoLink}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="flex items-center gap-1">
 								{project.npm ? (
 									<TerminalWindow
@@ -59,6 +62,8 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 							</a>
 							<a
 								href={project.ghLink}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="flex items-center gap-1">
 								<GithubLogo
 									size="20"

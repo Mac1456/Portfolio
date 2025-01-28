@@ -9,6 +9,7 @@ export default function SocialLinks() {
 						<a
 							href={link.href}
 							target="_blank"
+							rel="noopener noreferrer"
 							className="flex items-center gap-2 transition-all hover:text-gray-9 group">
 							{link.label}{' '}
 							<span className="group-hover:animate-shake">

@@ -16,6 +16,7 @@ export default function GeneralProjects({ projects, className }: ProjectSectionP
 								<a
 									href={project.ghLink}
 									target="_blank"
+									rel="noopener noreferrer"
 									className="text-gray-6 font-semibold hover:underline">
 									{project.title}
 								</a>
@@ -23,6 +24,8 @@ export default function GeneralProjects({ projects, className }: ProjectSectionP
 							<div className="flex items-center gap-1  text-gray-3 group-hover:text-gray-6 -mt-1 mr-1">
 								<a
 									href={project.demoLink}
+									target="_blank"
+									rel="noopener noreferrer"
 									className="flex items-center gap-1">
 									<Desktop
 										size="20"
@@ -34,6 +37,8 @@ export default function GeneralProjects({ projects, className }: ProjectSectionP
 								</a>
 								<a
 									href={project.ghLink}
+									target="_blank"
+									rel="noopener noreferrer"
 									className="flex items-center gap-1">
 									<GithubLogo
 										size="20"
