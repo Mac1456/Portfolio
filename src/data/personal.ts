@@ -1,10 +1,11 @@
 import { PersonalInfo } from '../types';
 import {
 	GithubLogo,
-	// TwitterLogo,
 	CodepenLogo,
 	// Butterfly,
+	// TwitterLogo,
 	PaperPlaneTilt,
+	LinkedinLogo,
 } from '@phosphor-icons/react';
 
 export const personal: PersonalInfo = {
@@ -13,7 +14,7 @@ export const personal: PersonalInfo = {
 	title: 'developer',
 	city: 'nyc',
 	about: 'a curated archive of my ongoing and completed web design and development projects',
-	lastUpdated: '2025-01-28',
+	lastUpdated: '2025-02-11',
 	socialMedia: [
 		{
 			label: 'github',
@@ -34,6 +35,11 @@ export const personal: PersonalInfo = {
 			label: 'codepen',
 			href: 'https://codepen.com/aniqatc',
 			Icon: CodepenLogo,
+		},
+		{
+			label: 'linkedin',
+			href: 'https://www.linkedin.com/in/aniqadev/',
+			Icon: LinkedinLogo,
 		},
 		{
 			label: 'email',
