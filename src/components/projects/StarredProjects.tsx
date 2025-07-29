@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Star, GithubLogo, Desktop, Circle } from '@phosphor-icons/react';
+import { Star, Desktop, Circle } from '@phosphor-icons/react';
 import { ProjectSectionProps } from '../../types';
 
 export default function StarredProjects({ projects, className }: ProjectSectionProps) {
@@ -9,7 +9,7 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 		async function fetchStarCount() {
 			for (const project of projects) {
 				try {
-					const response = await fetch(`https://api.github.com/repos/aniqatc/${project.title}`);
+					const response = await fetch(`https://api.github.com/repos/Mac1456/${project.title}`);
 					const data = await response.json();
 					setStarCounts(prev => ({
 						...prev,
@@ -33,13 +33,9 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 					className="group border-b border-gray-2 rounded -mx-2 px-2 py-3 transition-all hover:bg-gray-1 overflow-hidden">
 					<div className="flex items-center justify-between">
 						<div className="flex items-center gap-2">
-							<a
-								href={project.ghLink}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-white font-semibold hover:underline">
+							<span className="text-white font-semibold">
 								{project.title}
-							</a>
+							</span>
 							<p className="flex items-center gap-1">
 								<Star
 									weight="fill"
@@ -74,19 +70,6 @@ export default function StarredProjects({ projects, className }: ProjectSectionP
 								/>
 								<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out  hover:text-white hover:underline">
 									demo
-								</span>
-							</a>
-							<a
-								href={project.ghLink}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center gap-1">
-								<GithubLogo
-									size="20"
-									weight="duotone"
-								/>
-								<span className="hidden [@media(min-width:355px)]:block -ml-0.5 overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:text-white hover:underline">
-									repo
 								</span>
 							</a>
 						</div>

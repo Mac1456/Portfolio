@@ -1,10 +1,10 @@
-import { GithubLogo, Desktop, Circle, TerminalWindow } from '@phosphor-icons/react';
+import { Desktop, Circle, TerminalWindow } from '@phosphor-icons/react';
 import { ProjectSectionProps } from '../../types';
 
 export default function HighlightedProjects({ projects, className }: ProjectSectionProps) {
 	return (
 		<section className={className}>
-			<h2 className="text-accent-blue font-bold text-md pb-2 text-end">highlights</h2>
+			<h2 className="text-accent-blue font-bold text-md pb-2 text-end">Recently Made</h2>
 
 			{projects.map(project => (
 				<article
@@ -12,13 +12,9 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 					className="group border-b border-gray-2 rounded -mx-2 px-2 py-3 transition-all hover:bg-gray-1 overflow-hidden">
 					<div className="flex items-center justify-between">
 						<div className="flex items-center gap-2">
-							<a
-								href={project.ghLink}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-white font-semibold hover:underline">
+							<span className="text-white font-semibold">
 								{project.title}
-							</a>
+							</span>
 							<p
 								className={`flex items-center gap-1 ${
 									project.status === 'ongoing' ? 'text-accent-orange' : 'text-highlight-green'
@@ -58,19 +54,6 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 								)}
 								<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
 									demo
-								</span>
-							</a>
-							<a
-								href={project.ghLink}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center gap-1">
-								<GithubLogo
-									size="20"
-									weight="duotone"
-								/>
-								<span className="hidden [@media(min-width:355px)]:block -ml-0.5 overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
-									repo
 								</span>
 							</a>
 						</div>

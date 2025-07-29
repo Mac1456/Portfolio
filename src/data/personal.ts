@@ -1,7 +1,7 @@
 import { PersonalInfo } from '../types';
 import {
 	GithubLogo,
-	CodepenLogo,
+	// CodepenLogo,
 	// Butterfly,
 	// TwitterLogo,
 	PaperPlaneTilt,
@@ -10,40 +10,40 @@ import {
 
 export const personal: PersonalInfo = {
 	availability: true,
-	name: '@aniqatc',
-	title: 'developer',
-	city: 'nyc',
-	about: 'a curated archive of my ongoing and completed web design and development projects',
+	name: 'Mustafa Chaudheri',
+	title: 'AI FIRST ENGINEER',
+	city: '',
+	about: 'An archive of my ongoing and completed/developed projects.',
 	lastUpdated: '2025-02-11',
 	socialMedia: [
 		{
 			label: 'github',
-			href: 'https://github.com/aniqatc',
+			href: 'https://github.com/Mac1456?tab=repositories',
 			Icon: GithubLogo,
 		},
 		// {
 		// 	label: 'twitter',
-		// 	href: 'https://twitter.com/aniqatc',
+		// 	href: 'https://twitter.com/Mustafa',
 		// 	Icon: TwitterLogo,
 		// },
 		// {
 		// 	label: 'bluesky',
-		// 	href: 'https://bsky.app/profile/aniqa.dev',
+		// 	href: 'https://bsky.app/profile/mustafa.dev',
 		// 	Icon: Butterfly,
 		// },
-		{
-			label: 'codepen',
-			href: 'https://codepen.com/aniqatc',
-			Icon: CodepenLogo,
-		},
+		// {
+		// 	label: 'codepen',
+		// 	href: 'https://codepen.com/Mustafa',
+		// 	Icon: CodepenLogo,
+		// },
 		{
 			label: 'linkedin',
-			href: 'https://www.linkedin.com/in/aniqadev/',
+			href: 'https://www.linkedin.com/in/mustafa-chaudheri-a13a74253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
 			Icon: LinkedinLogo,
 		},
 		{
 			label: 'email',
-			href: 'mailto:hello@aniqa.dev',
+			href: 'mailto:mustafa.chaudheri@gmail.com',
 			Icon: PaperPlaneTilt,
 		},
 	],

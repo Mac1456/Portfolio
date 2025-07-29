@@ -1,14 +1,14 @@
 {
 	"name": "portfolio",
-	"description": "Personal portfolio website for @aniqatc.",
+	"description": "Personal portfolio website for @Mac1456.",
 	"private": true,
 	"version": "2.0.0",
 	"type": "module",
-	"homepage": "https://aniqa.dev",
+	"homepage": "https://mustafa.dev",
 	"author": {
-		"name": "Aniqa",
-		"email": "hello@aniqa.dev",
-		"url": "https://aniqa.dev"
+		"name": "Mustafa",
+		"email": "mustafa.chaudheri@gmail.com",
+		"url": "https://mustafa.dev"
 	},
 	"scripts": {
 		"start": "vite",
