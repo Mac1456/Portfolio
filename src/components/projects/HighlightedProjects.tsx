@@ -1,4 +1,4 @@
-import { Desktop, Circle, TerminalWindow } from '@phosphor-icons/react';
+import { Desktop, Circle, TerminalWindow, GithubLogo, VideoCamera } from '@phosphor-icons/react';
 import { ProjectSectionProps } from '../../types';
 
 export default function HighlightedProjects({ projects, className }: ProjectSectionProps) {
@@ -30,32 +30,64 @@ export default function HighlightedProjects({ projects, className }: ProjectSect
 								</span>
 							</p>
 						</div>
-						<div className="flex items-center gap-1 text-gray-3 group-hover:text-gray-6 -mt-1 mr-1">
+						<div className="flex items-center gap-2 text-gray-3 group-hover:text-gray-6 -mt-1 mr-1">
 							{project.npm && (
 								<span className="hidden xs:block font-hand text-md s:text-xl text-highlight-green mr-2">
 									published on npm
 								</span>
 							)}
-							<a
-								href={project.demoLink}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center gap-1">
-								{project.npm ? (
-									<TerminalWindow
+							{project.ghLink && (
+								<a
+									href={project.ghLink}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex items-center gap-1">
+									<GithubLogo
 										size="20"
 										weight="duotone"
 									/>
-								) : (
-									<Desktop
+									<span className="overflow-hidden w-0 group-hover:w-10 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
+										code
+									</span>
+								</a>
+							)}
+							{project.videoLink && (
+								<a
+									href={project.videoLink}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex items-center gap-1">
+									<VideoCamera
 										size="20"
 										weight="duotone"
 									/>
-								)}
-								<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
-									demo
-								</span>
-							</a>
+									<span className="overflow-hidden w-0 group-hover:w-10 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
+										video
+									</span>
+								</a>
+							)}
+							{project.demoLink && (
+								<a
+									href={project.demoLink}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex items-center gap-1">
+									{project.npm ? (
+										<TerminalWindow
+											size="20"
+											weight="duotone"
+										/>
+									) : (
+										<Desktop
+											size="20"
+											weight="duotone"
+										/>
+									)}
+									<span className="overflow-hidden w-0 group-hover:w-9 transition-[width] duration-500 ease-in-out hover:underline hover:text-white">
+										demo
+									</span>
+								</a>
+							)}
 						</div>
 					</div>
 					<div className="flex items-center justify-between text-xs gap-3 s:flex-nowrap flex-wrap">

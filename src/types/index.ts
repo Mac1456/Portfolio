@@ -22,6 +22,7 @@ export interface ProjectListing {
 	tech: string[];
 	ghLink: string;
 	demoLink: string;
+	videoLink?: string;
 	imagePath: string;
 	starCount: number;
 	category: 'highlight' | 'gen' | 'archive';

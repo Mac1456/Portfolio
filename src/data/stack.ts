@@ -1,16 +1,16 @@
 export const CURRENT_STACK = {
-	frontend: ['react', 'typescript', 'javascript', 'sass', 'tailwind', 'bootstrap', 'css', 'motion'],
-	backend: ['node.js', 'express', 'mongodb', 'mongoose', 'supabase'],
-	build: ['vite', 'webpack'],
-	deployment: ['vercel', 'heroku', 'netlify', 'digital ocean'],
-	design: ['figma', 'framer'],
-	dsa: ['java'],
+	frontend: ['react', 'typescript', 'electron', 'mui', 'tailwind', 'zustand', 'react-query', 'framer-motion'],
+	backend: ['firebase', 'node.js', 'openai', 'langgraph', 'php', 'suitecrm'],
+	build: ['vite', 'webpack', 'docker'],
+	deployment: ['firebase-hosting', 'vercel', 'netlify', 'itch.io'],
+	design: ['figma', 'web-speech-api', 'godot'],
+	dsa: ['java', 'gdscript', 'ai-behavior-trees'],
 } as const;
 
 export const LEARNING_STACK: string[] = [
-	'typescript',
-	'react',
-	'framer motion',
-	'node.js',
-	'three.js',
+	'php',
+	'langgraph',
+	'electron',
+	'suitecrm',
+	'docker',
 ] as const;
